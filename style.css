@@ -1,0 +1,51 @@
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    display: none; /* Hide toggle button by default */
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-items a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.menu-items a:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-toggle {
+        display: block; /* Show toggle button for small screens */
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .menu-items {
+        display: none; /* Hide menu items by default on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 50px; /* Adjust as needed based on your design */
+        background-color: #333;
+        width: 100%;
+    }
+
+    .menu-items a {
+        display: block;
+        padding: 10px 20px;
+    }
+}

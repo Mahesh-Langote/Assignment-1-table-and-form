@@ -9,28 +9,8 @@
     <meta name="keywords" content="web development, HTML, CSS, JavaScript, programming">
     <meta name="description" content="Welcome to my website. Explore my portfolio, projects, and expertise in web development.">
 </head> 
-<style>
-nav {
-    position: fixed;
-    top: 0;
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-}
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    margin: 0 5px;
-    border-radius: 5px;
-}
-
-nav a:hover {
-    background-color: #555;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 <body>
 
 <header>
@@ -38,15 +18,20 @@ nav a:hover {
 <img src="https://www.maheshlangote.online/mahesh.png" alt="Mahesh  Image" width="200" height="200">
 <br><br>
     <h1>Mahesh Langote Resume</h1>
+    
     <nav>
-        
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span>Menu</span>
+        </div>
+        <div class="menu-items">
             <a href="index.html">Home</a>
             <a href="#summary">Summary</a>
             <a href="#education">Education</a>
             <a href="#skills">Technical Skills</a>
-            <a href="#projects">Academic Projects</a> 
-
+            <a href="#projects">Academic Projects</a>  
+        </div>
     </nav>
+ 
 </header>
 
 <main>
@@ -101,6 +86,6 @@ nav a:hover {
 <footer>
     <p>&copy; 2024 Mahesh Langote. All rights reserved.</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

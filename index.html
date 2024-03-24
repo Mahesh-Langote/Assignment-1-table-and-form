@@ -8,44 +8,29 @@
     <meta name="author" content="Mahesh Langote">
     <meta name="keywords" content="web development, HTML, cuvette, assignment">    
 </head>
-<style>
-    
-    nav {
-        position: fixed;
-        top: 0;
-        background-color: #333;
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    nav a {
-        color: #fff;
-        text-decoration: none;
-        padding: 5px 10px;
-        margin: 0 5px;
-        border-radius: 5px;
-    }
-
-    nav a:hover {
-        background-color: #555;
-    }
-    </style>
+<link rel="stylesheet" href="style.css">
 <body>
+    
+<nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span>Menu</span>
+    </div>
+    <div class="menu-items">
+        <a href="https://www.maheshlangote.online" target="_blank" title="Visit Example">Mahesh</a>
+        <a href="resume.html">Resume</a>
+        <a href="#table">Table</a>
+        <a href="#form">Form</a> 
+        <a href="#element">Element</a>
+        <a href="#attributs">Attributes</a>
+        <a href="#special_symbol">Special Symbols</a> 
+    </div>
+</nav>
     <br><br>
 
 <img src="https://www.maheshlangote.online/mahesh.png" alt="Mahesh  Image" width="200" height="200">
 <br><br>
-<nav>
-    <a href="https://www.maheshlangote.online" target="_blank" title="Visit Example">Mahesh</a>
-    <a href="resume.html">Resume</a>
-    <a href="#table">Table</a>
-    <a href="#form">Form</a> 
-    <a href="#element">Element</a>
-    <a href="#attributs">Attributes</a>
-    <a href="#special_symbol">Special Symbols</a> 
-</nav>
+
+
 
 <p>This is a paragraph.</p>
 
@@ -737,7 +722,7 @@
 <p>&rsaquo; - Right-pointing single angle quotation mark: <code>&amp;rsaquo;</code></p>
 
 </div>
-
+<script src="script.js"></script>
   
 </body>
 </html>
