@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<style>
+    
+    nav {
+        position: fixed;
+        top: 0;
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background-color: #555;
+    }
+    </style>
+<body>
+    <br><br>
+
+<img src="https://www.maheshlangote.online/mahesh.png" alt="Mahesh  Image" width="200" height="200">
+<br><br>
+<nav>
+    <a href="https://www.maheshlangote.online" target="_blank" title="Visit Example">Mahesh</a>
+    <a href="resume.html">Resume</a>
+    <a href="#table">Table</a>
+    <a href="#form">Form</a> 
+    <a href="#element">Element</a>
+    <a href="#attributs">Attributes</a>
+    <a href="#special_symbol">Special Symbols</a> 
+</nav>
+
+<p>This is a paragraph.</p>
+
+<h2 id="section-heading">Section Heading</h2>
+
+<ol type="I">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+<br><br>
+
+<input type="text" value="Mahesh Langote" placeholder="Enter your name">
+
+<button type="button" onclick="alert('Button clicked!')">
+    Click Me
+</button>
+
+
+<div class="container">
+    <p>This is a div with a class.</p>
+</div>
+
+<h1>Hover </h1>
+
+<span title="Hover over me!">Hover Text</span>
+
+<div id="table">
+<br><br>
+
+<h1>Table</h1>
+
+<table border="1" width="100%" cellpadding="5">
+    <thead>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Class</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>101</td>
+            <td>Mahesh Langote</td>
+            <td>22</td>
+            <td>Male</td>
+            <td>MCA II</td>
+            <td>Pune, India</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Deepika Sharma</td>
+            <td>20</td>
+            <td>Female</td>
+            <td>BCA III</td>
+            <td>Mumbai, India</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Rahul Singh</td>
+            <td>22</td>
+            <td>Male</td>
+            <td>MCA II</td>
+            <td>Kolkata, India</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+
+<div id="form">
+    <br><br>
+<h1>Form</h1>
+
+<form action="submit.php" method="post" autocomplete="on" novalidate enctype="multipart/form-data" target="_self" name="exampleForm" id="exampleForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required maxlength="20" minlength="3" autofocus autocomplete="username">
+<br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6" maxlength="12" autocomplete="new-password">
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email">
+    <br><br>
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate" required max="2004-01-01" min="1900-01-01">
+    <br><br>
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br>
+<br>
+    <input type="checkbox" id="subscribe" name="subscribe" checked>
+    <label for="subscribe">Subscribe to newsletter</label><br>
+    <br>
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+        <option value="">Select country</option>
+        <option value="india">India</option>
+        <option value="usa">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="canada">Canada</option>
+    </select><br>
+    <br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" placeholder="Enter your message" rows="4" cols="50"></textarea><br>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+
+</div>
+ 
+
+
+<div id="element">
+    <br><br>
+    <h1>Elements</h1>
+<!-- Define Document Type -->
+<p>&lt;!-- &lt;!DOCTYPE&gt; defines the document type and version of HTML --&gt;</p>
+
+<!-- Root Element -->
+<p>&lt;!-- &lt;html&gt; is the root element of an HTML document --&gt;</p>
+
+<!-- Meta-information -->
+<p>&lt;!-- &lt;head&gt; contains meta-information about the document --&gt;</p>
+
+<!-- Metadata -->
+<p>&lt;!-- &lt;meta&gt; provides metadata about the HTML document, such as character set, viewport, etc. --&gt;</p>
+
+<!-- Title -->
+<p>&lt;!-- &lt;title&gt; defines the title of the document, displayed in the browser's title bar or tab --&gt;</p>
+
+<!-- Visible Content -->
+<p>&lt;!-- &lt;body&gt; contains the visible content of the HTML document --&gt;</p>
+
+<!-- Headings -->
+<p>&lt;!-- &lt;h1&gt; to &lt;h6&gt; represent six levels of headings, where &lt;h1&gt; is the highest --&gt;</p>
+
+<!-- Paragraph -->
+<p>&lt;!-- &lt;p&gt; represents a paragraph --&gt;</p>
+
+<!-- Hyperlink -->
+<p>&lt;!-- &lt;a&gt; defines a hyperlink, used to link to another page or resource --&gt;</p>
+
+<!-- Image -->
+<p>&lt;!-- &lt;img&gt; embeds an image in the document --&gt;</p>
+
+<!-- Line Break -->
+<p>&lt;!-- &lt;br&gt; inserts a single line break --&gt;</p>
+
+<!-- Ordered List -->
+<p>&lt;!-- &lt;ol&gt; defines an ordered list --&gt;</p>
+
+<!-- Unordered List -->
+<p>&lt;!-- &lt;ul&gt; defines an unordered list --&gt;</p>
+
+<!-- List Item -->
+<p>&lt;!-- &lt;li&gt; defines a list item within &lt;ol&gt; or &lt;ul&gt; --&gt;</p>
+
+<!-- Table -->
+<p>&lt;!-- &lt;table&gt; defines a table --&gt;</p>
+
+<!-- Table Header -->
+<p>&lt;!-- &lt;thead&gt; contains header rows in a table --&gt;</p>
+
+<!-- Table Body -->
+<p>&lt;!-- &lt;tbody&gt; contains the body content of a table --&gt;</p>
+
+<!-- Table Row -->
+<p>&lt;!-- &lt;tr&gt; defines a row in a table --&gt;</p>
+
+<!-- Table Header Cell -->
+<p>&lt;!-- &lt;th&gt; defines a header cell in a table --&gt;</p>
+
+<!-- Table Data Cell -->
+<p>&lt;!-- &lt;td&gt; defines a cell in a table --&gt;</p>
+
+<!-- Input Control -->
+<p>&lt;!-- &lt;input&gt; defines an input control, such as a text field, checkbox, radio button, etc. --&gt;</p>
+
+<!-- Button -->
+<p>&lt;!-- &lt;button&gt; defines a clickable button --&gt;</p>
+
+<!-- Division -->
+<p>&lt;!-- &lt;div&gt; defines a division or section in an HTML document --&gt;</p>
+
+<!-- Span -->
+<p>&lt;!-- &lt;span&gt; defines a section in a document for styling purposes --&gt;</p>
+
+<!-- Form -->
+<p>&lt;!-- &lt;form&gt; defines a form for user input --&gt;</p>
+
+<!-- Label -->
+<p>&lt;!-- &lt;label&gt; defines a label for an &lt;input&gt; element --&gt;</p>
+
+<!-- Select Dropdown -->
+<p>&lt;!-- &lt;select&gt; creates a dropdown list --&gt;</p>
+
+<!-- Option in Dropdown -->
+<p>&lt;!-- &lt;option&gt; defines an option in a dropdown list --&gt;</p>
+
+<!-- Textarea -->
+<p>&lt;!-- &lt;textarea&gt; defines a multi-line text input control --&gt;</p>
+
+<!-- Audio -->
+<p>&lt;!-- &lt;audio&gt; embeds sound content in the document --&gt;</p>
+
+<!-- Video -->
+<p>&lt;!-- &lt;video&gt; embeds video content in the document --&gt;</p>
+
+<!-- Inline Frame -->
+<p>&lt;!-- &lt;iframe&gt; embeds another HTML page into the current page --&gt;</p>
+
+<!-- Script -->
+<p>&lt;!-- &lt;script&gt; embeds scripting code or links to an external script file --&gt;</p>
+
+<!-- Style -->
+<p>&lt;!-- &lt;style&gt; contains style information for a document, either embedded or linked --&gt;</p>
+
+<!-- Link -->
+<p>&lt;!-- &lt;link&gt; links an external resource, such as a stylesheet --&gt;</p>
+
+<!-- Footer -->
+<p>&lt;!-- &lt;footer&gt; defines a footer for a document or section --&gt;</p>
+
+<!-- Header -->
+<p>&lt;!-- &lt;header&gt; defines a header for a document or section --&gt;</p>
+
+<!-- Navigation -->
+<p>&lt;!-- &lt;nav&gt; defines navigation links in a document --&gt;</p>
+
+<!-- Section -->
+<p>&lt;!-- &lt;section&gt; defines a section in a document --&gt;</p>
+
+<!-- Aside -->
+<p>&lt;!-- &lt;aside&gt; defines content aside from the content it is placed in --&gt;</p>
+
+<!-- Main Content -->
+<p>&lt;!-- &lt;main&gt; specifies the main content of a document --&gt;</p>
+
+<!-- Article -->
+<p>&lt;!-- &lt;article&gt; defines independent, self-contained content --&gt;</p>
+
+<p>&lt;pre&gt; Tag:</p>
+<p>Usage: The &lt;pre&gt; tag is used to define preformatted text, preserving all whitespace characters, including spaces, tabs, and line breaks.</p>
+
+<!-- Example of preformatted text -->
+<pre>
+    This is preformatted text.
+    It preserves spaces,
+    tabs,
+    and line breaks.
+</pre>
+
+</div>
+
+
+<div id="attributs">
+    <br><br>
+<h1>Attributes</h1>
+
+
+<!-- Anchor Tag with Attributes -->
+<p>&lt;a&gt; attributes:
+    <ul>
+        <li><strong>href:</strong> Specifies the URL of the link</li>
+        <li><strong>target:</strong> Specifies where to open the linked document (e.g., "_blank" for a new tab)</li>
+            <ul>
+                <li><code>_blank</code>: Opens the linked document in a new browser window or tab.</li>
+                <li><code>_self</code>: Opens the linked document in the same frame or window as the link.</li>
+                <li><code>_parent</code>: Opens the linked document in the parent frame.</li>
+                <li><code>_top</code>: Opens the linked document in the full body of the window.</li>
+                <li><em>&lt;frame_name&gt;</em>: Opens the linked document in a named frame.</li>
+            </ul>
+            </ul>
+        <li><strong>title:</strong> Provides a title for the link (often displayed as a tooltip)</li>
+    </ul>
+</p>
+
+<!-- Image Tag with Attributes -->
+<p>&lt;img&gt; attributes:
+    <ul>
+        <li><strong>src:</strong> Specifies the URL of the image</li>
+        <li><strong>alt:</strong> Specifies an alternate text for the image (for accessibility)</li>
+        <li><strong>width:</strong> Specifies the width of the image</li>
+        <li><strong>height:</strong> Specifies the height of the image</li>
+    </ul>
+</p>
+
+<!-- Paragraph Tag with Attributes -->
+<p>&lt;p&gt; attributes:
+    <ul>
+        <li><strong>style:</strong> Specifies CSS styles for the paragraph</li>
+    </ul>
+</p>
+
+<!-- Heading Tag with Attributes -->
+<p>&lt;h1&gt; to &lt;h6&gt; attributes:
+    <ul>
+        <li><strong>id:</strong> Specifies a unique identifier for the heading</li>
+    </ul>
+</p>
+<!-- <ol> attributes: -->
+    <p>&lt;ol&gt; attributes:
+        <ul>
+            <li><strong>type:</strong> Specifies the type of the list (e.g., "1" for numeric, "A" for uppercase alphabetical)</li>
+                <ul>
+                    <li><code>1</code>: Numeric numbering (1, 2, 3, ...)</li>
+                    <li><code>A</code>: Uppercase alphabetical (A, B, C, ...)</li>
+                    <li><code>a</code>: Lowercase alphabetical (a, b, c, ...)</li>
+                    <li><code>I</code>: Uppercase Roman numerals (I, II, III, ...)</li>
+                    <li><code>i</code>: Lowercase Roman numerals (i, ii, iii, ...)</li>
+                </ul>
+            <li><strong>start:</strong> Specifies the start value of the list</li>
+        </ul>
+    </p>
+   <!-- <ul> attributes: -->
+<p>&lt;ul&gt; attributes:
+    <ul>
+        <li><strong>type:</strong> Specifies the type of list marker</li>
+            <ul>
+                <li type="square"><code>square</code>: Square markers</li>
+                <li type="circle"><code>circle</code>: Circle markers</li>
+                <li type="disc"><code>disc</code>: Disc markers</li>
+                <li type="1"><code>1</code>: Decimal markers</li>
+                <li type="a"><code>a</code>: Lowercase alphabetical markers</li>
+            </ul>
+        <li><strong>start:</strong> Not applicable. <code>&lt;ul&gt;</code> elements do not have a <code>start</code> attribute.</li>
+    </ul>
+</p>
+
+<!-- Table Tag with Attributes -->
+<p>&lt;table&gt; attributes:
+    <ul>
+        <li><strong>border:</strong> Specifies the border width of the table</li>
+        <li><strong>cellpadding:</strong> Specifies the padding between the cell wall and the cell content</li>
+        <li><strong>cellspacing:</strong> Specifies the spacing between cells</li>
+        <li><strong>width:</strong> Specifies the width of the table</li>
+        <li><strong>height:</strong> Specifies the height of the table</li>
+        <li><strong>align:</strong> Specifies the alignment of the table (deprecated in HTML5)</li>
+        <li><strong>bgcolor:</strong> Specifies the background color of the table (deprecated in HTML5)</li>
+        <li><strong>bordercolor:</strong> Specifies the border color of the table (deprecated in HTML5)</li>
+        <li><strong>bordercolordark:</strong> Specifies the dark border color of the table (deprecated in HTML5)</li>
+        <li><strong>bordercolorlight:</strong> Specifies the light border color of the table (deprecated in HTML5)</li>
+        <li><strong>frame:</strong> Specifies which parts of the outside borders that should be visible (deprecated in HTML5)</li>
+        <li><strong>rules:</strong> Specifies which parts of the inside borders that should be visible (deprecated in HTML5)</li>
+    </ul>
+</p>
+ 
+<!-- Input Tag with Attributes -->
+<p>&lt;input&gt; attributes:
+    <ul>
+        <li><strong>type:</strong> Specifies the type of input control. Possible values include:
+            <ul>
+                <li><code>text:</code> Text input field</li>
+                <li><code>password:</code> Password input field</li>
+                <li><code>checkbox:</code> Checkbox</li>
+                <li><code>radio:</code> Radio button</li>
+                <li><code>submit:</code> Submit button</li>
+                <li><code>reset:</code> Reset button</li>
+                <li><code>button:</code> Button</li>
+                <li><code>file:</code> File upload control</li>
+                <li><code>hidden:</code> Hidden input field</li>
+                <li><code>image:</code> Image as a submit button</li>
+                <li><code>date:</code> Date input field</li>
+                <li><code>number:</code> Number input field</li>
+                <li><code>email:</code> Email input field</li>
+                <li><code>url:</code> URL input field</li>
+                <li><code>tel:</code> Telephone number input field</li>
+                <li><code>search:</code> Search input field</li>
+                <li><code>color:</code> Color picker input field</li>
+            </ul>
+        </li>
+        <ul>
+            <li><strong>accept:</strong> Specifies the types of files that the server accepts (for file input). It can take one or more file types or MIME types separated by commas. For example:
+                <ul>
+                    <li><code>accept="image/*"</code>: Allows only image files</li>
+                    <li><code>accept=".jpg, .jpeg, .png"</code>: Allows specific image formats</li>
+                    <li><code>accept="audio/*"</code>: Allows only audio files</li>
+                    <li><code>accept=".mp3, .wav"</code>: Allows specific audio formats</li>
+                    <li><code>accept=".doc, .docx, .pdf"</code>: Allows document files</li>
+                </ul>
+            </li>
+        </ul>
+         <li><strong>autocomplete:</strong> Specifies whether the input field should have autocomplete enabled or disabled</li>
+        <li><strong>autofocus:</strong> Specifies that the input field should automatically get focus when the page loads</li>
+        <li><strong>checked:</strong> Specifies that a checkbox or radio button should be pre-selected when the page loads</li>
+        <li><strong>disabled:</strong> Specifies that the input field should be disabled</li>
+        <li><strong>form:</strong> Specifies one or more forms the input field belongs to</li>
+        <li><strong>formaction:</strong> Specifies the URL where to submit the form data when the form is submitted (for type="submit" and type="image")</li>
+        <li><strong>formenctype:</strong> Specifies how the form data should be encoded before sending it to the server (for type="submit" and type="image")</li>
+        <li><strong>formmethod:</strong> Specifies the HTTP method to use when sending form data (for type="submit" and type="image")</li>
+        <li><strong>formnovalidate:</strong> Specifies that the form data should not be validated when submitted (for type="submit" and type="image")</li>
+        <li><strong>formtarget:</strong> Specifies where to display the response after submitting the form (for type="submit" and type="image")</li>
+        <li><strong>list:</strong> Specifies the id of a datalist that contains pre-defined options for an input field</li>
+        <li><strong>max:</strong> Specifies the maximum value allowed for an input field (for type="number" or type="date")</li>
+        <li><strong>maxlength:</strong> Specifies the maximum number of characters allowed in an input field</li>
+        <li><strong>min:</strong> Specifies the minimum value allowed for an input field (for type="number" or type="date")</li>
+        <li><strong>multiple:</strong> Specifies that the user is allowed to enter multiple values in an input field (for type="email" or type="file")</li>
+        <li><strong>name:</strong> Specifies the name of the input field, used for form submission and identifying the field in scripting</li>
+        <li><strong>pattern:</strong> Specifies a regular expression pattern that the input value must match (for type="text" or type="password")</li>
+        <li><strong>placeholder:</strong> Specifies a short hint that describes the expected value of the input field</li>
+        <li><strong>readonly:</strong> Specifies that the input field is read-only and cannot be edited</li>
+        <li><strong>required:</strong> Specifies that the input field is required and must be filled out before submitting the form</li>
+        <li><strong>size:</strong> Specifies the width of the input field, in characters (for type="text" or type="password")</li>
+        <li><strong>src:</strong> Specifies the URL of an image to display in the input field (for type="image")</li>
+        <li><strong>step:</strong> Specifies the legal number intervals for an input field (for type="number")</<li><strong>value:</strong> Specifies the initial value of the input field</li>
+    </ul>
+</p>
+<!-- Button Tag with Attributes -->
+<p>&lt;button&gt; attributes:
+    <ul>
+        <li><strong>type:</strong> Specifies the type of the button. Possible values include:
+            <ul>
+                <li><code>submit</code>: Submits the form data</li>
+                <li><code>reset</code>: Resets the form data to its initial values</li>
+                <li><code>button</code>: Standard button (default behavior)</li>
+            </ul>
+        </li>
+        <li><strong>name:</strong> Specifies the name of the button, used for form submission and identifying the button in scripting</li>
+        <li><strong>value:</strong> Specifies the value associated with the button, which is submitted with the form data</li>
+        <li><strong>form:</strong> Specifies one or more forms the button belongs to</li>
+        <li><strong>formaction:</strong> Specifies the URL where to submit the form data when the button is clicked (overrides the form's action attribute)</li>
+        <li><strong>formenctype:</strong> Specifies how the form data should be encoded before sending it to the server (for formaction)</li>
+        <li><strong>formmethod:</strong> Specifies the HTTP method to use when sending form data (for formaction)</li>
+        <li><strong>formnovalidate:</strong> Specifies that the form data should not be validated when submitted (for formaction)</li>
+        <li><strong>formtarget:</strong> Specifies where to display the response after submitting the form (for formaction)</li>
+        <li><strong>disabled:</strong> Specifies that the button should be disabled</li>
+        <li><strong>autofocus:</strong> Specifies that the button should automatically get focus when the page loads</li>
+        <li><strong>onclick:</strong> Specifies a JavaScript function to execute when the button is clicked</li>
+    </ul>
+</p>
+
+
+<!-- Div Tag with Attributes -->
+<p>&lt;div&gt; attributes:
+    <ul>
+        <li><strong>class:</strong> Specifies one or more class names for an element (used for styling with CSS)</li>
+    </ul>
+</p>
+
+<!-- Span Tag with Attributes -->
+<p>&lt;span&gt; attributes:
+    <ul>
+        <li><strong>title:</strong> Specifies extra information about an element (often displayed as a tooltip)</li>
+    </ul>
+</p>
+
+<!-- Form Tag with Attributes -->
+<p>&lt;form&gt; attributes:
+    <ul>
+        <li><strong>action:</strong> Specifies the URL where the form data will be sent</li>
+        <li><strong>method:</strong> Specifies the HTTP method to use when sending form data (e.g., "get" or "post")</li>
+        <li><strong>autocomplete:</strong> Specifies whether form elements should have autocomplete enabled</li>
+        <li><strong>novalidate:</strong> Specifies that a form should not be validated when submitted</li>
+        <li><strong>enctype:</strong> Specifies how form data should be encoded before sending it to the server</li>
+        <li><strong>target:</strong> Specifies where to display the response after submitting the form</li>
+        <li><strong>name:</strong> Specifies a name for the form</li>
+        <li><strong>id:</strong> Specifies a unique id for the form</li>
+    </ul>
+</p>
+
+<!-- Label Tag with Attributes -->
+<p>&lt;label&gt; attributes:
+    <ul>
+        <li><strong>for:</strong> Specifies which form element a label is bound to (by matching the 'for' attribute with the 'id' attribute of the form element)</li>
+    </ul>
+</p>
+
+<!-- Select Tag with Attributes -->
+<p>&lt;select&gt; attributes:
+    <ul>
+        <li><strong>name:</strong> Specifies the name of the select element (used for form submission)</li>
+        <li><strong>required:</strong> Specifies that the user is required to select a value before submitting the form</li>
+    </ul>
+</p>
+
+<!-- Option Tag with Attributes -->
+<p>&lt;option&gt; attributes:
+    <ul>
+        <li><strong>value:</strong> Specifies the value to be sent to the server when the form is submitted</li>
+    </ul>
+</p>
+
+<!-- Textarea Tag with Attributes -->
+<p>&lt;textarea&gt; attributes:
+    <ul>
+        <li><strong>name:</strong> Specifies the name of the textarea (used for form submission)</li>
+        <li><strong>placeholder:</strong> Specifies a short hint that describes the expected value of the textarea</li>
+        <li><strong>rows:</strong> Specifies the visible height of the textarea (in lines)</li>
+        <li><strong>cols:</strong> Specifies the visible width of the textarea (in characters)</li>
+    </ul>
+</p>
+
+<!-- Audio Tag with Attributes -->
+<p>&lt;audio&gt; attributes:
+    <ul>
+        <li><strong>src:</strong> Specifies the URL of the audio file</li>
+        <li><strong>controls:</strong> Specifies that audio controls should be displayed (e.g., play, pause, volume)</li>
+    </ul>
+</p>
+
+<!-- Video Tag with Attributes -->
+<p>&lt;video&gt; attributes:
+    <ul>
+        <li><strong>src:</strong> Specifies the URL of the video file</li>
+        <li><strong>controls:</strong> Specifies that video controls should be displayed (e.g., play, pause, volume)</li>
+    </ul>
+</p>
+
+<!-- Iframe Tag with Attributes -->
+<p>&lt;iframe&gt; attributes:
+    <ul>
+        <li><strong>src:</strong> Specifies the URL of the page to embed in the iframe</li>
+        <li><strong>width:</strong> Specifies the width of the iframe</li>
+        <li><strong>height:</strong> Specifies the height of the iframe</li>
+    </ul>
+</p>
+
+<!-- Script Tag with Attributes -->
+<p>&lt;script&gt; attributes:
+    <ul>
+        <li><strong>src:</strong> Specifies the URL of the external script file</li>
+        <li><strong>type:</strong> Specifies the scripting language of the embedded code</li>
+    </ul>
+</p>
+
+<!-- Style Tag with Attributes -->
+<p>&lt;style&gt; attributes:
+    <ul>
+        <li><strong>type:</strong> Specifies the style sheet language of the embedded styles</li>
+    </ul>
+</p>
+
+<!-- Link Tag with Attributes -->
+<p>&lt;link&gt; attributes:
+    <ul>
+        <li><strong>href:</strong> Specifies the URL of the external resource being linked</li>
+        <li><strong>rel:</strong> Specifies the relationship between the current document and the linked document</li>
+        <li><strong>type:</strong> Specifies the media type of the linked document</li>
+    </ul>
+</p>
+
+<!-- Footer Tag with Attributes -->
+<p>&lt;footer&gt; attributes:
+    <ul>
+        <li><strong>class:</strong> Specifies one or more class names for the element (used for styling with CSS)</li>
+    </ul>
+</p>
+
+<!-- Header Tag with Attributes -->
+<p>&lt;header&gt; attributes:
+    <ul>
+        <li><strong>class:</strong> Specifies one or more class names for the element (used for styling with CSS)</li>
+    </ul>
+</p>
+
+<!-- Nav Tag with Attributes -->
+<p>&lt;nav&gt; attributes:
+    <ul>
+        <li><strong>class:</strong> Specifies one or more class names for the element (used for styling with CSS)</li>
+    </ul>
+</p>
+
+<!-- Section Tag with Attributes -->
+<p>&lt;section&gt; attributes:
+    <ul>
+        <li><strong>class:</strong> Specifies one or more class names for the element (used for styling with CSS)</li>
+    </ul>
+</p>
+
+<!-- Aside Tag with Attributes -->
+<p>&lt;aside&gt; attributes:
+    <ul>
+        <li><strong>class:</strong> Specifies one or more class names for the element (used for styling with CSS)</li>
+    </ul>
+</p>
+
+<!-- Main Tag with Attributes -->
+<p>&lt;main&gt; attributes:
+    <ul>
+        <li><strong>class:</strong> Specifies one or more class names for the element (used for styling with CSS)</li>
+    </ul>
+</p>
+
+<!-- Article Tag with Attributes -->
+<p>&lt;article&gt; attributes:
+    <ul>
+        <li><strong>class:</strong> Specifies one or more class names for the element (used for styling with CSS)</li>
+    </ul>
+</p>
+
+</div>
+
+<div id="special_symbol">
+    <br><br>
+    <h1>Special Symbols</h1>
+
+
+<!-- Less than -->
+<p>&lt; - Less than: <code>&amp;lt;</code></p>
+
+<!-- Greater than -->
+<p>&gt; - Greater than: <code>&amp;gt;</code></p>
+
+<!-- Ampersand -->
+<p>&amp; - Ampersand: <code>&amp;amp;</code></p>
+
+<!-- Double quote -->
+<p>&quot; - Double quote: <code>&amp;quot;</code></p>
+
+<!-- Single quote or apostrophe -->
+<p>&apos; - Single quote or apostrophe: <code>&amp;apos;</code> or <code>&amp;#39;</code></p>
+
+<!-- Non-breaking space -->
+<p>&nbsp; - Non-breaking space: <code>&amp;nbsp;</code></p>
+
+<!-- Copyright symbol -->
+<p>&copy; - Copyright symbol: <code>&amp;copy;</code></p>
+
+<!-- Registered trademark symbol -->
+<p>&reg; - Registered trademark symbol: <code>&amp;reg;</code></p>
+
+<!-- Trademark symbol -->
+<p>&trade; - Trademark symbol: <code>&amp;trade;</code></p>
+
+<!-- Multiplication symbol -->
+<p>&times; - Multiplication symbol: <code>&amp;times;</code></p>
+
+<!-- Division symbol -->
+<p>&divide; - Division symbol: <code>&amp;divide;</code></p>
+
+<!-- Number sign or pound sign -->
+<p>&num; - Number sign or pound sign: <code>&amp;num;</code> or <code>&amp;#35;</code></p>
+
+<!-- Dollar sign -->
+<p>&dollar; - Dollar sign: <code>&amp;dollar;</code></p>
+
+<!-- Percent sign -->
+<p>&percnt; - Percent sign: <code>&amp;percnt;</code></p>
+
+<!-- Dagger symbol -->
+<p>&dagger; - Dagger symbol: <code>&amp;dagger;</code></p>
+
+<!-- Double dagger symbol -->
+<p>&Dagger; - Double dagger symbol: <code>&amp;Dagger;</code></p>
+
+<!-- Bullet point -->
+<p>&bull; - Bullet point: <code>&amp;bull;</code></p>
+
+<!-- Ellipsis -->
+<p>&hellip; - Ellipsis: <code>&amp;hellip;</code></p>
+
+<!-- En dash -->
+<p>&ndash; - En dash: <code>&amp;ndash;</code></p>
+
+<!-- Em dash -->
+<p>&mdash; - Em dash: <code>&amp;mdash;</code></p>
+
+<!-- Left single quotation mark -->
+<p>&lsquo; - Left single quotation mark: <code>&amp;lsquo;</code></p>
+
+<!-- Right single quotation mark -->
+<p>&rsquo; - Right single quotation mark: <code>&amp;rsquo;</code></p>
+
+<!-- Left double quotation mark -->
+<p>&ldquo; - Left double quotation mark: <code>&amp;ldquo;</code></p>
+
+<!-- Right double quotation mark -->
+<p>&rdquo; - Right double quotation mark: <code>&amp;rdquo;</code></p>
+
+<!-- Left-pointing double angle quotation mark -->
+<p>&laquo; - Left-pointing double angle quotation mark: <code>&amp;laquo;</code></p>
+
+<!-- Right-pointing double angle quotation mark -->
+<p>&raquo; - Right-pointing double angle quotation mark: <code>&amp;raquo;</code></p>
+
+<!-- Left-pointing single angle quotation mark -->
+<p>&lsaquo; - Left-pointing single angle quotation mark: <code>&amp;lsaquo;</code></p>
+
+<!-- Right-pointing single angle quotation mark -->
+<p>&rsaquo; - Right-pointing single angle quotation mark: <code>&amp;rsaquo;</code></p>
+
+</div>
+
+  
+</body>
+</html>
